@@ -1,0 +1,30 @@
+/**
+Possible states
+===============
+- focused (:focus-visible)
+- disabled (:disabled)
+
+Possible HTML elements
+======================
+
+- <input type="text">
+- <textarea></textarea>
+*/
+input[type="text"],
+textarea {
+  border: solid 1px;
+  padding: .5em;
+  color: inherit;
+  background: inherit;
+  display: block;
+
+  &:disabled {
+    opacity: .33;
+    pointer-events: none;
+  }
+}
+
+textarea {
+  resize: vertical;
+  min-height: 2em;
+}

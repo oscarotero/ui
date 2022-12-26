@@ -15,8 +15,8 @@ Possible HTML elements
 */
 input[type="radio"] {
   appearance: none;
-  width: 2em;
-  height: 2em;
+  width: 1.5em;
+  height: 1.5em;
   border-radius: 50%;
   border: solid 1px;
   vertical-align: middle;
@@ -24,15 +24,16 @@ input[type="radio"] {
   background-position: center center;
   accent-color: currentColor;
   color: inherit;
+  transition: border-width 200ms;
 
   &:checked {
-    background-color: currentColor;
-    background-image: url('data:image/svg+xml;charset=UTF-8,<svg width="16" height="16" viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg"><circle cx="8" cy="8" r="5" /></svg>');
+    border-width: .5em;
   }
 
   &:not(:disabled) {
     cursor: pointer;
   }
+
   &:disabled {
     opacity: .33;
     pointer-events: none;

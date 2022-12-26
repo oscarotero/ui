@@ -21,6 +21,8 @@ input[type="range"] {
   -webkit-appearance: none;
   vertical-align: middle;
   accent-color: currentColor;
+  width: 100%;
+  display: block;
 
   &::-webkit-slider-runnable-track {
     background: currentColor;
@@ -29,19 +31,22 @@ input[type="range"] {
     height: 1px;
     cursor: pointer;
   }
+
   &::-webkit-slider-thumb {
-    margin-top: -8px;
-    width: 16px;
-    height: 16px;
+    margin-top: calc(-1.5em / 2);
+    width: 1.5em;
+    height: 1.5em;
     background: var(--color-background);
     border: 1px solid currentColor;
     border-radius: 50%;
     cursor: pointer;
     -webkit-appearance: none;
   }
+
   &:focus::-webkit-slider-runnable-track {
     background: currentColor;
   }
+
   &::-moz-range-track {
     background: currentColor;
     border: 0;
@@ -49,9 +54,10 @@ input[type="range"] {
     height: 1px;
     cursor: pointer;
   }
+
   &::-moz-range-thumb {
-    width: 1em;
-    height: 1em;
+    width: 1.5em;
+    height: 1.5em;
     background: var(--color-background);
     border: 1px solid currentColor;
     border-radius: 50%;
@@ -61,10 +67,12 @@ input[type="range"] {
   &:not(:disabled) {
     cursor: pointer;
 
-    &:hover {
+    &:hover,
+    &:focus-visible {
       &::-webkit-slider-thumb {
         background: currentColor;
       }
+
       &::-moz-range-thumb {
         background: currentColor;
       }

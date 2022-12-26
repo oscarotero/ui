@@ -36,6 +36,7 @@ a[role="button"] {
   &:not(:disabled) {
     cursor: pointer;
   }
+
   &:disabled,
   &[aria-disabled="true"] {
     opacity: .33;
