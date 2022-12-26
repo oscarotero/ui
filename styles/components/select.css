@@ -16,6 +16,7 @@ Possible HTML elements
 */
 select {
   appearance: none;
+  border-radius: 0;
   padding: .5em;
   padding-right: 2em;
   border: solid 1px;
@@ -24,5 +25,9 @@ select {
 
   &:not(:disabled) {
     cursor: pointer;
+  }
+  &:disabled {
+    opacity: .33;
+    pointer-events: none;
   }
 }

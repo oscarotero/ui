@@ -1,5 +1,9 @@
 @import "https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css";
 
+body {
+  color: blue;
+}
+
 :focus-visible {
   outline-offset: 2px;
   outline-style: solid;

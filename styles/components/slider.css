@@ -1,0 +1,78 @@
+/**
+Open UI: https://open-ui.org/components/slider.research
+
+Possible states
+===============
+
+- focused (:focus-visible)
+- disabled (:disabled)
+
+Possible HTML elements
+======================
+
+- <input type="range">
+*/
+input[type="range"] {
+  --color-background: white;
+
+  margin: 0;
+  color: currentColor;
+  background-color: transparent;
+  -webkit-appearance: none;
+  vertical-align: middle;
+  accent-color: currentColor;
+
+  &::-webkit-slider-runnable-track {
+    background: currentColor;
+    border: 0;
+    width: 100%;
+    height: 1px;
+    cursor: pointer;
+  }
+  &::-webkit-slider-thumb {
+    margin-top: -8px;
+    width: 16px;
+    height: 16px;
+    background: var(--color-background);
+    border: 1px solid currentColor;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-appearance: none;
+  }
+  &:focus::-webkit-slider-runnable-track {
+    background: currentColor;
+  }
+  &::-moz-range-track {
+    background: currentColor;
+    border: 0;
+    width: 100%;
+    height: 1px;
+    cursor: pointer;
+  }
+  &::-moz-range-thumb {
+    width: 1em;
+    height: 1em;
+    background: var(--color-background);
+    border: 1px solid currentColor;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &:not(:disabled) {
+    cursor: pointer;
+
+    &:hover {
+      &::-webkit-slider-thumb {
+        background: currentColor;
+      }
+      &::-moz-range-thumb {
+        background: currentColor;
+      }
+    }
+  }
+
+  &:disabled {
+    opacity: .33;
+    pointer-events: none;
+  }
+}
