@@ -1,0 +1,34 @@
+/**
+Open UI: https://open-ui.org/components/radio-button.research
+
+Possible states
+===============
+
+- focused (:focus-visible)
+- mouse over (:hover)
+- checked (:checked)
+
+Possible HTML elements
+======================
+
+- <input type="radio">
+*/
+input[type="radio"] {
+  appearance: none;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  border: solid 1px;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &:checked {
+    background-color: black;
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg width="16" height="16" viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg"><circle cx="8" cy="8" r="5" /></svg>');
+  }
+
+  &:not(:disabled) {
+    cursor: pointer;
+  }
+}

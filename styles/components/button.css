@@ -1,0 +1,38 @@
+/**
+Open UI: https://open-ui.org/components/button
+
+Possible states
+===============
+
+- focused (:focus-visible)
+- mouse over (:hover)
+- pressing (:active)
+- disabled (:disabled)
+- toggle
+  - selected ([aria-pressed="true"])
+  - unselected ([aria-pressed="false"])
+
+Possible HTML elements
+======================
+
+- <button></button>
+- <input type="button">
+- <a role="button">
+*/
+
+button,
+input[type="button"],
+a[role="button"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: solid 1px;
+  padding: .5em;
+  text-decoration: none;
+  color: inherit;
+
+  &:not(:disabled) {
+    cursor: pointer;
+  }
+}

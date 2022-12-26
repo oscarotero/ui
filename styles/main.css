@@ -1,0 +1,8 @@
+/* Basics */
+@import "./normalize.css";
+
+/* Components */
+@import "./components/button.css";
+@import "./components/select.css";
+@import "./components/checkbox.css";
+@import "./components/radio.css";

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>Design system</title>
+
+  <style>
+    body {
+      padding: 2em;
+    }
+    hr {
+      margin-top: 2em;
+      margin-bottom: 2em;
+      border: none;
+      border-top: solid 1px;
+      background: none;
+    }
+  </style>
+</head>
+<body>
+  <h2>Buttons</h2>
+  <button>Button</button>
+  <button disabled>Button</button>
+
+  <input type="button" value="Button">
+  <input type="button" value="Button" disabled>
+
+  <a href="/" role="button">Button</a>
+  <a href="/" role="button" aria-disabled="true">Button</a>
+
+  <hr>
+
+  <h2>Select</h2>
+
+  <select>
+    <option>First option</option>
+    <option>Second option</option>
+    <optgroup label="Fruits">
+      <option>Apple</option>
+      <option>Orange</option>
+    </optgroup>
+  </select>
+  <select disabled>
+    <option>First option</option>
+    <option>Second option</option>
+    <optgroup label="Fruits">
+      <option>Apple</option>
+      <option>Orange</option>
+    </optgroup>
+  </select>
+
+  <hr>
+  <h2>Checkbox</h2>
+
+  <label>
+    <input type="checkbox">
+    Hello world
+  </label>
+
+  <label>
+    <input type="checkbox" checked>
+    Hello world
+  </label>
+
+  <label>
+    <input type="checkbox" class="indeterminate">
+    Hello world
+
+    <script>
+      document.querySelector(".indeterminate").indeterminate = true;
+    </script>
+  </label>
+  
+  <hr>
+  <h2>Radio</h2>
+
+  <label>
+    <input type="radio" name="example">
+    Hello world
+  </label>
+
+  <label>
+    <input type="radio" name="example" checked>
+    Hello world
+  </label>
+</body>
+</html>
