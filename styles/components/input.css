@@ -12,7 +12,7 @@ Possible HTML elements
 */
 input[type="text"],
 textarea {
-  border: solid 1px;
+  border: solid 1px currentColor;
   padding: .5em;
   color: inherit;
   background: inherit;
@@ -22,9 +22,14 @@ textarea {
     opacity: .33;
     pointer-events: none;
   }
+  &::placeholder {
+    color: currentColor;
+    opacity: 0.5;
+  }
 }
 
 textarea {
   resize: vertical;
   min-height: 2em;
+  -webkit-appearance: initial; /* safari bug */
 }
