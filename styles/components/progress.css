@@ -1,0 +1,51 @@
+/**
+Possible states
+===============
+
+- indeterminate (:indeterminate)
+
+Possible HTML elements
+======================
+
+- <progress></progress>
+*/
+progress {
+  border: solid 1px currentColor;
+  height: .5em;
+  width: 100%;
+  display: block;
+  background: transparent;
+
+  &::-webkit-progress-value {
+      background: currentColor;
+      height: calc(100% + 1px); /* Chrome for Android fix */
+      top: -1px;                /* Chrome for Android fix */
+      position: relative;       /* Chrome for Android fix */
+  }
+  &::-webkit-progress-bar {
+      background: transparent;
+  }
+
+  &::-moz-progress-bar {
+      background: currentColor;
+  }
+
+  &:indeterminate {
+    background: linear-gradient(currentColor, currentColor) no-repeat;
+    background-size: 25% 100%;
+    animation: progressIndeterminate 1s linear infinite alternate;
+
+    &::-moz-progress-bar {
+      background: transparent;
+    }
+  }
+}
+
+@keyframes progressIndeterminate {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: 100%;
+  }
+}
