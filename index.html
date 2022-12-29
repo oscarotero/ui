@@ -20,6 +20,21 @@
   </style>
 </head>
 <body>
+  <h2>Tooltip</h2>
+  <button
+    onclick="document.getElementById('tooltip').hidden = !document.getElementById('tooltip').hidden"
+  >Open</button>
+  <div role="tooltip" id="tooltip">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ipsum minus veniam quod quis architecto sapiente perferendis iste, tempora, amet, quia eius velit vitae laudantium officia harum dignissimos ipsa dolor?
+  </div>
+
+  <h2>Dialog</h2>
+  <dialog id="dialog">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ipsum minus veniam quod quis architecto sapiente perferendis iste, tempora, amet, quia eius velit vitae laudantium officia harum dignissimos ipsa dolor?
+  </dialog>
+
+  <button onclick="document.getElementById('dialog').showModal()">Open</button>
+
   <h2>Progress</h2>
 
   <progress value="0.5"></progress>
