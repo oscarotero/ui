@@ -34,7 +34,7 @@ input[type="week"],
 textarea {
   border: solid 1px currentColor;
   padding: .5em;
-  min-height: 44px;
+  min-height: 2.75em;
   padding: .7em;
   color: inherit;
   background: inherit;
