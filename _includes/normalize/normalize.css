@@ -1,11 +1,15 @@
 @import "https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css";
 
-body {
-  color: blue;
-}
-
 :focus-visible {
   outline-width: 1px;
   outline-offset: 2px;
   outline-style: solid;
+}
+
+hr {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border: none;
+  border-top: solid 1px;
+  background: none;
 }

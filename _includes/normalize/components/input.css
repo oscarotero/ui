@@ -7,16 +7,39 @@ Possible states
 Possible HTML elements
 ======================
 
+- <input type="date">
+- <input type="datetime-local">
+- <input type="email">
+- <input type="month">
+- <input type="number">
+- <input type="password">
+- <input type="tel">
 - <input type="text">
+- <input type="time">
+- <input type="url">
+- <input type="week">
 - <textarea></textarea>
 */
+input[type="date"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="tel"],
 input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
 textarea {
   border: solid 1px currentColor;
   padding: .5em;
+  min-height: 44px;
+  padding: .7em;
   color: inherit;
   background: inherit;
   display: block;
+  width: 100%;
 
   &:disabled {
     opacity: .33;
@@ -30,6 +53,6 @@ textarea {
 
 textarea {
   resize: vertical;
-  min-height: 2em;
+  min-height: 3em;
   -webkit-appearance: initial; /* safari bug */
 }

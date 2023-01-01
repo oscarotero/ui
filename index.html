@@ -3,23 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="main.css">
   <title>Design system</title>
 
   <style>
     body {
       padding: 2em;
     }
-    hr {
-      margin-top: 2em;
-      margin-bottom: 2em;
-      border: none;
-      border-top: solid 1px;
-      background: none;
+    .stack-inline {
+      display: flex;
+      align-items: center;
+      column-gap: 6px;
     }
   </style>
 </head>
 <body>
+  <h2>UI</h2>
+
+  <div class="stack-inline">
+    <input type="text" placeholder="Example: design">
+    <select>
+      <option>All</option>
+      <option>Articles</option>
+      <option>Posts</option>
+    </select>
+    <button type="reset">Reset</button>
+    <button class="is-primary">Search</button>
+  </div>
+
+
   <h2>Tooltip</h2>
   <button
     onclick="document.getElementById('tooltip').hidden = !document.getElementById('tooltip').hidden"
@@ -59,7 +71,7 @@
   
   <h2>Buttons</h2>
 
-  <button>Button</button>
+  <button class="is-primary">Button</button>
   <button disabled>Button</button>
   <br>
   <input type="button" value="Button">

@@ -17,18 +17,23 @@ Possible HTML elements
 
 - <button></button>
 - <input type="button">
+- <input type="reset">
+- <input type="submit">
 - <a role="button">
 */
 
 button,
 input[type="button"],
+input[type="reset"],
+input[type="submit"],
 a[role="button"] {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   border: solid 1px;
-  padding: .5em;
+  padding: .7em;
+  min-height: 44px;
   text-decoration: none;
   color: inherit;
   background: inherit;
