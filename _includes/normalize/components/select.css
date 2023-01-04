@@ -15,13 +15,16 @@ Possible HTML elements
 - <select></select>
 */
 select {
+  --marker-image: url('data:image/svg+xml;charset=UTF-8,<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m8 9.586 5.293-5.293a1 1 0 1 1 1.414 1.414l-6 6a1 1 0 0 1-1.414 0l-6-6a1 1 0 0 1 1.414-1.414L8 9.586Z" fill="black"/></svg>');
+
   appearance: none;
   border-radius: 0;
   padding: .7em;
   min-height: 2.75em;
   padding-right: 2em;
   border: solid 1px;
-  background: url('data:image/svg+xml;charset=UTF-8,<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m8 9.586 5.293-5.293a1 1 0 1 1 1.414 1.414l-6 6a1 1 0 0 1-1.414 0l-6-6a1 1 0 0 1 1.414-1.414L8 9.586Z" fill="black"/></svg>') no-repeat center right .5em;
+  background: var(--marker-image) no-repeat center right .5em;
+  background-size: 1em 1em;
   color: inherit;
   display: block;
 
