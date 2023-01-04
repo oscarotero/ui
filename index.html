@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="styles.css">
   <title>Design system</title>
 
   <style>
@@ -30,6 +30,12 @@
     <button type="reset">Reset</button>
     <button class="is-primary">Search</button>
   </div>
+
+  <h2>Switch</h2>
+
+  <button role="switch" onclick="this.setAttribute('aria-checked', this.getAttribute('aria-checked') == 'true' ? 'false' : 'true')"> Hello world que pasa</button>
+  <br>
+  <button role="switch" disabled onclick="this.setAttribute('aria-checked', this.getAttribute('aria-checked') == 'true' ? 'false' : 'true')"> Hello world que pasa</button>
 
   <h2>Accordion</h2>
   <details>

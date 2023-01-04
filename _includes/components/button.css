@@ -28,6 +28,7 @@ input[type="reset"],
 input[type="submit"],
 a[role="button"] {
   display: inline-flex;
+  column-gap: .5em;
   align-items: center;
   justify-content: center;
   text-align: center;
