@@ -5,6 +5,10 @@
   --color-black-500: hsl(0deg, 0%, 50%);
 }
 
+:focus-visible {
+  outline-color: var(--color-primary-500);
+}
+
 /** Border radius */
 button,
 input[type="button"],
@@ -24,7 +28,8 @@ input[type="url"],
 input[type="week"],
 textarea,
 select,
-details {
+details,
+summary {
   border-radius: var(--radius);
   border-color: var(--color-black-500);
 }
@@ -40,4 +45,15 @@ a[role="button"] {
     background-color: var(--color-primary-500);
     border-width: 0;
   }
+}
+/** Checkbox & radio */
+input[type="checkbox"]:checked,
+input[type="checkbox"]:indeterminate,
+input[type="radio"]:checked {
+  color: var(--color-primary-500);
+}
+
+/** Switch */
+button[role="switch"] {
+  --color-on: var(--color-primary-500);
 }
