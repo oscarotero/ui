@@ -14,6 +14,8 @@ Possible HTML elements
 - <input type="radio">
 */
 input[type="radio"] {
+  --check-color: white;
+
   appearance: none;
   width: 1.5em;
   height: 1.5em;
@@ -24,10 +26,10 @@ input[type="radio"] {
   background-position: center center;
   accent-color: currentColor;
   color: inherit;
-  transition: border-width 200ms;
 
   &:checked {
     border-width: .5em;
+    background-color: var(--check-color);
   }
 
   &:not(:disabled) {
