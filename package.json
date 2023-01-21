@@ -1,0 +1,38 @@
+{
+  "name": "ui-normalize",
+  "version": "0.1.0",
+  "description": "Normalize browsers' default style for user interfaces and design systems",
+  "license": "MIT",
+  "repository": "oscarotero/ui-normalize",
+  "funding": "https://github.com/sponsors/oscarotero",
+  "author": {
+    "name": "Óscar Otero",
+    "email": "oom@oscarotero.com",
+    "url": "https://oscarotero.com"
+  },
+  "main": "ui-normalize.css",
+  "style": "ui-normalize.css",
+  "files": [
+    "ui-normalize.css"
+  ],
+  "scripts": {
+    "build": "postcss src/main.css -o ui-normalize.css"
+  },
+  "keywords": [
+    "normalize",
+    "css",
+    "reset",
+    "browser",
+    "style",
+    "ui",
+    "design-system"
+  ],
+  "devDependencies": {
+    "cssnano": "^5.1.14",
+    "modern-normalize": "^1.1.0",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
+    "postcss-import": "^15.1.0",
+    "postcss-nesting": "^10.2.0"
+  }
+}

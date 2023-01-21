@@ -1,0 +1,11 @@
+@import "../node_modules/modern-normalize/modern-normalize.css";
+
+:focus {
+  z-index: 1;
+}
+
+:focus-visible {
+  outline-width: 1px;
+  outline-offset: 2px;
+  outline-style: solid;
+}

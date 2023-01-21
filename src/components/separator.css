@@ -1,0 +1,14 @@
+/**
+Possible HTML elements
+======================
+
+- <hr>
+*/
+
+hr {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border: none;
+  border-top: solid 1px;
+  background: none;
+}
