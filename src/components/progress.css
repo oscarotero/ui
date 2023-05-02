@@ -17,8 +17,8 @@ progress {
   background: transparent;
 
   &::-webkit-progress-value {
-      background: currentColor;
       height: calc(100% + 1px); /* Chrome for Android fix */
+      background: currentColor;
       top: -1px;                /* Chrome for Android fix */
       position: relative;       /* Chrome for Android fix */
   }

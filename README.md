@@ -33,3 +33,8 @@ example:
 @import "your-design-system.css" layer(theme);
 @import "your-theme.css" layer(theme);
 ```
+
+## To-do
+
+- [ ] Use system colors:
+      https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#system_colors

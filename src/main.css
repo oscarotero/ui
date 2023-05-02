@@ -2,13 +2,13 @@
 
 @import "./components/accordion.css";
 @import "./components/button.css";
-@import "./components/select.css";
 @import "./components/checkbox.css";
-@import "./components/radio.css";
-@import "./components/slider.css";
-@import "./components/separator.css";
-@import "./components/input.css";
-@import "./components/progress.css";
 @import "./components/dialog.css";
-@import "./components/tooltip.css";
+@import "./components/input.css";
+@import "./components/popover.css";
+@import "./components/progress.css";
+@import "./components/radio.css";
+@import "./components/select.css";
+@import "./components/separator.css";
+@import "./components/slider.css";
 @import "./components/switch.css";

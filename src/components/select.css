@@ -19,8 +19,8 @@ select {
 
   appearance: none;
   border-radius: 0;
-  padding: .7em;
-  min-height: 2.75em;
+  padding: .6em;
+  min-height: 2.5em;
   padding-right: 2em;
   border: solid 1px;
   background: var(--marker-image) no-repeat center right .5em;

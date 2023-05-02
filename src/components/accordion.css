@@ -22,8 +22,8 @@ summary {
   display: flex;
   column-gap: .5em;
   align-items: center;
-  padding: .7em;
-  min-height: 2.75em;
+  padding: .6em;
+  min-height: 2.5em;
   text-decoration: none;
   color: inherit;
   background: inherit;
@@ -38,10 +38,8 @@ summary {
   &::before {
     content: '';
     display: block;
-    mask-repeat: no-repeat;
-    mask-position: center center;
-    mask-size: 1em 1em;
-    mask-image: var(--marker-image);
+    mask: var(--marker-image) center center / 1em 1em no-repeat;
+    -webkit-mask: var(--marker-image) center center / 1em 1em no-repeat;
     width: 1em;
     height: 1em;
     background: currentColor;

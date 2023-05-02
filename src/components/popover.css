@@ -1,0 +1,43 @@
+/**
+Open UI: https://open-ui.org/components/tooltip.research
+Polyfill: https://github.com/oddbird/popover-polyfill
+
+Possible states
+===============
+
+Possible HTML elements
+======================
+
+- <div popover></div>
+
+CSS taken from:
+https://cdn.jsdelivr.net/npm/@oddbird/popover-polyfill@latest/dist/popover.css
+*/
+[popover] {
+  position: absolute;
+  z-index: 2147483647;
+  padding: 1em;
+  max-width: 30em;
+  height: fit-content;
+  border: solid 1px;
+  background: canvas;
+  color: canvastext;
+  overflow: auto;
+  margin: 0;
+}
+@supports not selector([popover]:open) {
+  [popover]:not(.\:popover-open, dialog[open]) {
+    display: none;
+  }
+  [anchor].\:popover-open {
+    inset: auto;
+  }
+}
+@supports not selector([popover]:popover-open) {
+  [popover]:not(.\:popover-open, dialog[open]) {
+    display: none;
+  }
+  [anchor].\:popover-open {
+    inset: auto;
+  }
+}

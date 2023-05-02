@@ -26,6 +26,7 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"],
+input[type="file"]::file-selector-button,
 a[role="button"] {
   display: inline-flex;
   column-gap: .5em;
@@ -33,18 +34,16 @@ a[role="button"] {
   justify-content: center;
   text-align: center;
   border: solid 1px;
-  padding: .7em;
-  min-height: 2.75em;
+  padding: .6em;
+  min-height: 2.5em;
   text-decoration: none;
   color: inherit;
   background: inherit;
-
-  &:not(:disabled) {
-    cursor: pointer;
-  }
+  cursor: pointer;
 
   &:disabled,
   &[aria-disabled="true"] {
+    cursor: default;
     opacity: .33;
     pointer-events: none;
   }

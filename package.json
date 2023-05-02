@@ -1,6 +1,6 @@
 {
   "name": "ui-normalize",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Normalize browsers' default style for user interfaces and design systems",
   "license": "MIT",
   "repository": "oscarotero/ui-normalize",
@@ -16,6 +16,7 @@
     "ui-normalize.css"
   ],
   "scripts": {
+    "watch": "postcss src/main.css -o ui-normalize.css --watch",
     "build": "postcss src/main.css -o ui-normalize.css"
   },
   "keywords": [
