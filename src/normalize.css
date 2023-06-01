@@ -1,5 +1,13 @@
 @import "../node_modules/modern-normalize/modern-normalize.css";
 
+html {
+  scroll-behavior: smooth;
+  text-rendering: auto;
+  overflow-wrap: break-word;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
 :focus {
   z-index: 1;
 }
