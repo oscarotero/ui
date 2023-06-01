@@ -14,7 +14,9 @@ Possible HTML elements
 - <input type="radio">
 */
 input[type="radio"] {
-  --check-color: white;
+  --color-off: Canvas;
+  --color-on: AccentColor;
+  --color-check: Canvas;
 
   appearance: none;
   width: 1.5em;
@@ -22,14 +24,15 @@ input[type="radio"] {
   border-radius: 50%;
   border: solid 1px;
   vertical-align: middle;
+  background-color: var(--color-off);
   background-repeat: no-repeat;
   background-position: center center;
-  accent-color: currentColor;
-  color: inherit;
+  accent-color: var(--color-on);
+  color: var(--color-on);
 
   &:checked {
     border-width: .5em;
-    background-color: var(--check-color);
+    background-color: var(--color-check);
   }
 
   &:not(:disabled) {

@@ -28,17 +28,21 @@ input[type="reset"],
 input[type="submit"],
 input[type="file"]::file-selector-button,
 a[role="button"] {
+  --color: ButtonText;
+  --color-background: ButtonFace;
+  --color-border: ButtonBorder;
+
   display: inline-flex;
   column-gap: .5em;
   align-items: center;
   justify-content: center;
   text-align: center;
-  border: solid 1px;
+  border: solid 1px var(--color-border);
   padding: .6em;
   min-height: 2.5em;
   text-decoration: none;
-  color: inherit;
-  background: inherit;
+  color: var(--color);
+  background: var(--color-background);
   cursor: pointer;
 
   &:disabled,

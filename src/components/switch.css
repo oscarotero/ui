@@ -16,10 +16,12 @@ Possible HTML elements
 - <button role="switch"></button>
 */
 button[role="switch"] {
-  --color-off: gray;
-  --color-on: currentColor;
+  --color-off: GrayText;
+  --color-on: AccentColor;
+
   padding: 0;
   border: none;
+  background: none;
 
   &::before {
     content: "";
