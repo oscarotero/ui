@@ -8,6 +8,7 @@ project adheres to [Semantic Versioning](http://semver.org/).
 ### Fixed
 - The markers in the accordions are flexible.
 - Make the outline-color consistent in all browsers.
+- Configure the overflow-behavior to dialog and popovers.
 
 ## [0.3.0] - 2023-06-01
 ### Added

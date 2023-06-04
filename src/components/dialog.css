@@ -15,4 +15,5 @@ dialog {
   border-width: 1px;
   padding: 1em;
   max-width: calc(100% - 2em);
+  overflow-behavior: none; /* https://mastodon.gal/@simevidas@mastodon.social/110487568192272651 */
 }

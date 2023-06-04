@@ -24,6 +24,7 @@ https://cdn.jsdelivr.net/npm/@oddbird/popover-polyfill@latest/dist/popover.css
   color: canvastext;
   overflow: auto;
   margin: 0;
+  overflow-behavior: none; /* https://mastodon.gal/@simevidas@mastodon.social/110487568192272651 */
 }
 @supports not selector([popover]:open) {
   [popover]:not(.\:popover-open, dialog[open]) {
