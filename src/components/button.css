@@ -28,9 +28,9 @@ input[type="reset"],
 input[type="submit"],
 input[type="file"]::file-selector-button,
 a[role="button"] {
-  --color: ButtonText;
-  --color-background: ButtonFace;
-  --color-border: ButtonBorder;
+  --color: var(--color-buttonText);
+  --color-background: var(--color-buttonFace);
+  --color-border: var(--color-buttonBorder);
 
   display: inline-flex;
   column-gap: .5em;

@@ -10,8 +10,8 @@ Possible HTML elements
 - <progress></progress>
 */
 progress {
-  --color: AccentColor;
-  --color-border: AccentColor;
+  --color: var(--color-accentColor);
+  --color-border: var(--color-accentColor);
 
   border: solid 1px var(--color-border);
   height: .5em;

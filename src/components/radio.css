@@ -14,9 +14,9 @@ Possible HTML elements
 - <input type="radio">
 */
 input[type="radio"] {
-  --color-off: Canvas;
-  --color-on: AccentColor;
-  --color-check: Canvas;
+  --color-off: var(--color-canvas);
+  --color-on: var(--color-accentColor);
+  --color-check: var(--color-canvas);
 
   appearance: none;
   width: 1.5em;

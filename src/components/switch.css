@@ -16,8 +16,8 @@ Possible HTML elements
 - <button role="switch"></button>
 */
 button[role="switch"] {
-  --color-off: GrayText;
-  --color-on: AccentColor;
+  --color-off: var(--color-grayText);
+  --color-on: var(--color-accentColor);
 
   padding: 0;
   border: none;

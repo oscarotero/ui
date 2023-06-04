@@ -13,12 +13,12 @@ Possible HTML elements
 - <input type="range">
 */
 input[type="range"] {
-  --color: AccentColor;
-  --color-border: AccentColor;
+  --color: var(--color-accentColor);
+  --color-border: var(--color-accentColor);
   --track-height: 1px;
 
   margin: 0;
-  color: AccentColor;
+  color: var(--color-accentColor);
   background-color: transparent;
   -webkit-appearance: none;
   vertical-align: middle;
