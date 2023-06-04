@@ -16,4 +16,5 @@ html {
   outline-width: 1px;
   outline-offset: 2px;
   outline-style: solid;
+  outline-color: currentColor;
 }
