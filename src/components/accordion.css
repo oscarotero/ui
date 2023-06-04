@@ -38,8 +38,8 @@ summary {
   &::before {
     content: '';
     display: block;
-    mask: var(--marker-image) center center / 1em 1em no-repeat;
-    -webkit-mask: var(--marker-image) center center / 1em 1em no-repeat;
+    mask: var(--marker-image) center center / 100% 100% no-repeat;
+    -webkit-mask: var(--marker-image) center center / 100% 100% no-repeat;
     width: 1em;
     height: 1em;
     background: currentColor;
