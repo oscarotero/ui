@@ -21,7 +21,7 @@ https://cdn.jsdelivr.net/npm/@oddbird/popover-polyfill@latest/dist/popover.css
   height: fit-content;
   border: solid 1px;
   background: canvas;
-  color: canvastext;
+  color: var(--color-canvasText);
   overflow: auto;
   margin: 0;
 }

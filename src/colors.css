@@ -1,0 +1,67 @@
+/*
+ * Colors using the system colors spec
+ * https://developer.mozilla.org/docs/Web/CSS/system-color
+ */
+:root {
+  /* Background of accented user interface controls */
+  --color-accentColor: AccentColor;
+
+  /* Text of accented user interface controls */
+  --color-accentColorText: AccentColorText;
+
+  /* Text of active links */
+  --color-activeText: ActiveText;
+
+  /* Base border color of controls */
+  --color-buttonBorder: ButtonBorder;
+
+  /* Background color of controls */
+  --color-buttonFace: ButtonFace;
+
+  /* Text color of controls */
+  --color-buttonText: ButtonText;
+
+  /* Background of application content or documents */
+  --color-canvas: Canvas;
+
+  /* Text color in application content or documents */
+  --color-canvasText: CanvasText;
+
+  /* Background of input fields */
+  --color-field: Field;
+
+  /* Text in input fields */
+  --color-fieldText: FieldText;
+
+  /* Text color for disabled items (e.g. a disabled control) */
+  --color-grayText: GrayText;
+
+  /* Background of selected items */
+  --color-highlight: Highlight;
+
+  /* Text color of selected items */
+  --color-highlightText: HighlightText;
+
+  /* Text of non-active, non-visited links */
+  --color-linkText: LinkText;
+
+  /* Background of text that has been specially marked (such as by the HTML mark element) */
+  --color-mark: Mark;
+
+  /* Text that has been specially marked (such as by the HTML mark element) */
+  --color-markText: MarkText;
+
+  /* Text of visited links */
+  --color-visitedText: VisitedText;
+}
+
+/*
+ * Chrome doesn't suppport AccentColor and AccentColorText
+ * https://bugs.chromium.org/p/chromium/issues/detail?id=1338061
+ */
+@supports not (color: AccentColor) {
+  :root {
+    --color-accentColor: #007aff;
+    --color-accentColorText: white;
+  }
+}

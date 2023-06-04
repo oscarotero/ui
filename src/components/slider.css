@@ -13,11 +13,12 @@ Possible HTML elements
 - <input type="range">
 */
 input[type="range"] {
-  --color-background: white;
+  --color: var(--color-accentColor);
+  --color-border: var(--color-accentColor);
   --track-height: 1px;
 
   margin: 0;
-  color: currentColor;
+  color: var(--color-accentColor);
   background-color: transparent;
   -webkit-appearance: none;
   vertical-align: middle;
@@ -28,7 +29,7 @@ input[type="range"] {
   cursor: pointer;
 
   &::-webkit-slider-runnable-track {
-    background: currentColor;
+    background: var(--color-border);
     border: 0;
     width: 100%;
     height: var(--track-height);
@@ -38,19 +39,19 @@ input[type="range"] {
     margin-top: calc((-1.5em + var(--track-height)) / 2);
     width: 1.5em;
     height: 1.5em;
-    background: var(--color-background);
-    border: 1px solid currentColor;
+    background: var(--color);
+    border: 1px solid var(--color-border);
     border-radius: 50%;
     cursor: pointer;
     -webkit-appearance: none;
   }
 
   &:focus::-webkit-slider-runnable-track {
-    background: currentColor;
+    background: var(--color-border);
   }
 
   &::-moz-range-track {
-    background: currentColor;
+    background: var(--color-border);
     border: 0;
     width: 100%;
     height: var(--track-height);
@@ -59,8 +60,8 @@ input[type="range"] {
   &::-moz-range-thumb {
     width: 1.5em;
     height: 1.5em;
-    background: var(--color-background);
-    border: 1px solid currentColor;
+    background: var(--color);
+    border: 1px solid var(--color-border);
     border-radius: 50%;
     cursor: pointer;
     box-sizing: border-box;
@@ -72,11 +73,11 @@ input[type="range"] {
     &:hover,
     &:focus-visible {
       &::-webkit-slider-thumb {
-        background: currentColor;
+        background: var(--color);
       }
 
       &::-moz-range-thumb {
-        background: currentColor;
+        background: var(--color);
       }
     }
   }

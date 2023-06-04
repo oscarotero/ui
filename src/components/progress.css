@@ -10,7 +10,10 @@ Possible HTML elements
 - <progress></progress>
 */
 progress {
-  border: solid 1px currentColor;
+  --color: var(--color-accentColor);
+  --color-border: var(--color-accentColor);
+
+  border: solid 1px var(--color-border);
   height: .5em;
   width: 100%;
   display: block;
@@ -18,7 +21,7 @@ progress {
 
   &::-webkit-progress-value {
       height: calc(100% + 1px); /* Chrome for Android fix */
-      background: currentColor;
+      background: var(--color);
       top: -1px;                /* Chrome for Android fix */
       position: relative;       /* Chrome for Android fix */
   }
@@ -27,11 +30,11 @@ progress {
   }
 
   &::-moz-progress-bar {
-      background: currentColor;
+      background: var(--color);
   }
 
   &:indeterminate {
-    background: linear-gradient(currentColor, currentColor) no-repeat;
+    background: linear-gradient(var(--color), var(--color)) no-repeat;
     background-size: 25% 100%;
     animation: progressIndeterminate 1s linear infinite alternate;
 
