@@ -19,7 +19,7 @@ following additions:
   - **Slider**: Unified the style of the `input[type="range"]` element.
   - **Switch**: Using the `button[role="switch"]` element.
   - **Separator**: Using the `hr` element.
-  - **Tooltip**: Using the `*[role="tooltip"]` element (no interactive).
+  - **Popover**: Using the new [popover attribute](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/popover) `[popover]`.
 
 ## Usage
 
